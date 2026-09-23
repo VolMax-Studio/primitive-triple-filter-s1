@@ -1,0 +1,18 @@
+{
+  "status": "PRE_GATE_NOT_FROZEN",
+  "confirmatory_run_performed": false,
+  "seed_source": "future drand quicknet round determined by independently timestamped freeze approval",
+  "beacon_round": null,
+  "beacon_randomness": null,
+  "primary_baseline": "direct",
+  "smoke": "PASS end-to-end 9 separate-seed fixtures; timings discarded",
+  "no_gate": "BLOCKED before confirmatory seed construction",
+  "sha256": {
+    "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_3.md": "8b7264b9517af63b93a59a79521ec20a3908d72be78c3ab1488d223481f7d6e9",
+    "pythagorean_filter_confirmatory_v0_3.py": "786b0cd56fa291aa4ba030261a2fd6b00e632dc7e5623ef5a5477a3a704d8155",
+    "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_2.md": "bfd2d869b48bbae4265d4f0abc822727369ef881a4f670a9ecadc3b0d12fd05f",
+    "pythagorean_filter_confirmatory_v0_2.py": "a5c29113873fe748af553ba503937916f04dc8cc6f03b7ba72703401cab80c31"
+  },
+  "independent_review": null,
+  "approval": null
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PRE_GATE_NOT_FROZEN",
+  "confirmatory_run_performed": false,
+  "seed_hex": "0186c26d4907c55309ecc09c23cfecf8",
+  "pilot_is_exploratory": true,
+  "sha256": {
+    "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_2.md": "bfd2d869b48bbae4265d4f0abc822727369ef881a4f670a9ecadc3b0d12fd05f",
+    "pythagorean_filter_confirmatory_v0_2.py": "a5c29113873fe748af553ba503937916f04dc8cc6f03b7ba72703401cab80c31",
+    "PYTHAGOREAN_FILTER_EXPERIMENT_v0_1.md": "f84bbcb1758e30fe0020aac05bf3ba52c08e5f436bd903df42645a8475d03b38",
+    "pythagorean_filter_benchmark_v0_1.py": "a4eb615b33f77950aae4904df1f3c3865e37e28a85a6abe75dd4528eb7042182",
+    "pythagorean_filter_results_v0_1.json": "305803ed09e66be3f6eaf201aac5ad859801a95e5253a58c1bf737c04a3c4ae4"
+  },
+  "smoke": "PASS: 9 separate-seed fixtures; no confirmatory timings",
+  "without_gate": "BLOCKED: --gate-record is required for --confirmatory",
+  "reviewer": null,
+  "approval": null
+}

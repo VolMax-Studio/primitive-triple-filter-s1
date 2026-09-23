@@ -1,0 +1,192 @@
+{
+  "scope": "synthetic validate_gate; no real beacon or benchmark run",
+  "benchmark_sha256": "ca9a06a9a3b3d3b85c8ae571204489fbf6bbf59c20f1a54a8a817a4428383215",
+  "spec_sha256": "a89ca119b74d67744532489c9930cc4be2e42d8a2fefc86f9364463bf957a7ec",
+  "cases": 19,
+  "guards": [
+    {
+      "guard": 1,
+      "line": 211,
+      "condition": "not record_path",
+      "status": "KILLED",
+      "killed_by": [
+        "no_record"
+      ]
+    },
+    {
+      "guard": 2,
+      "line": 226,
+      "condition": "any(freeze.get(key) != value for key, value in required.items())",
+      "status": "KILLED",
+      "killed_by": [
+        "freeze_binding"
+      ]
+    },
+    {
+      "guard": 3,
+      "line": 228,
+      "condition": "not all(freeze.get(k) for k in\n               (\"reviewer\", \"approved_at_utc\", \"freeze_publication_evidence_url\",\n                \"planned_attempt_id\", \"run_window_start_utc\", \"run_window_end_utc\"))",
+      "status": "KILLED",
+      "killed_by": [
+        "freeze_evidence"
+      ]
+    },
+    {
+      "guard": 4,
+      "line": 242,
+      "condition": "parse_utc(freeze[\"run_window_start_utc\"]) != window_start\n            or parse_utc(freeze[\"run_window_end_utc\"]) != window_end",
+      "status": "KILLED",
+      "killed_by": [
+        "announced_window"
+      ]
+    },
+    {
+      "guard": 5,
+      "line": 245,
+      "condition": "freeze.get(\"scheduled_round\") != expected_round",
+      "status": "KILLED",
+      "killed_by": [
+        "scheduled_round"
+      ]
+    },
+    {
+      "guard": 6,
+      "line": 255,
+      "condition": "any(chain_info.get(k) != v for k, v in expected_chain_info.items())",
+      "status": "KILLED",
+      "killed_by": [
+        "chain_constants"
+      ]
+    },
+    {
+      "guard": 7,
+      "line": 257,
+      "condition": "not chain_info.get(\"reviewer\") or not chain_info.get(\"evidence_url\")",
+      "status": "KILLED",
+      "killed_by": [
+        "chain_evidence"
+      ]
+    },
+    {
+      "guard": 8,
+      "line": 259,
+      "condition": "beacon.get(\"chain_hash\") != CHAIN_HASH or beacon.get(\"round\") != expected_round",
+      "status": "KILLED",
+      "killed_by": [
+        "beacon_chain_round"
+      ]
+    },
+    {
+      "guard": 9,
+      "line": 262,
+      "condition": "beacon.get(\"source_url\") != source",
+      "status": "KILLED",
+      "killed_by": [
+        "beacon_url"
+      ]
+    },
+    {
+      "guard": 10,
+      "line": 264,
+      "condition": "not all(beacon.get(k) for k in\n               (\"randomness_hex\", \"signature_hex\", \"observed_at_utc\",\n                \"verified_by\", \"verification_evidence_url\"))",
+      "status": "KILLED",
+      "killed_by": [
+        "beacon_evidence"
+      ]
+    },
+    {
+      "guard": 11,
+      "line": 273,
+      "condition": "len(randomness) != 32 or len(signature) != 48",
+      "status": "KILLED",
+      "killed_by": [
+        "signature_length"
+      ]
+    },
+    {
+      "guard": 12,
+      "line": 275,
+      "condition": "hashlib.sha256(signature).digest() != randomness",
+      "status": "KILLED",
+      "killed_by": [
+        "beacon_hash"
+      ]
+    },
+    {
+      "guard": 13,
+      "line": 278,
+      "condition": "observed < release",
+      "status": "KILLED",
+      "killed_by": [
+        "observed_before_release"
+      ]
+    },
+    {
+      "guard": 14,
+      "line": 280,
+      "condition": "datetime.now(timezone.utc) < release",
+      "status": "KILLED",
+      "killed_by": [
+        "future_beacon"
+      ]
+    },
+    {
+      "guard": 15,
+      "line": 282,
+      "condition": "not all(execution.get(k) for k in\n               (\"idle_operator\", \"idle_attested_at_utc\", \"idle_method\",\n                \"attempt_id\", \"registered_at_utc\", \"attempt_ledger_evidence_url\"))",
+      "status": "KILLED",
+      "killed_by": [
+        "execution_evidence"
+      ]
+    },
+    {
+      "guard": 16,
+      "line": 289,
+      "condition": "attested < observed or attested > registered\n            or now - attested > timedelta(hours=2)",
+      "status": "KILLED",
+      "killed_by": [
+        "attested_before_observed",
+        "attested_after_registered"
+      ]
+    },
+    {
+      "guard": 17,
+      "line": 292,
+      "condition": "execution[\"attempt_id\"] != freeze[\"planned_attempt_id\"]",
+      "status": "KILLED",
+      "killed_by": [
+        "attempt_id"
+      ]
+    },
+    {
+      "guard": 18,
+      "line": 294,
+      "condition": "not (window_start <= registered <= now <= window_end)",
+      "status": "KILLED",
+      "killed_by": [
+        "execution_window"
+      ]
+    }
+  ],
+  "subconditions": [
+    {
+      "condition": "attested_before_observed",
+      "status": "KILLED",
+      "killed_by": [
+        "attested_before_observed"
+      ]
+    },
+    {
+      "condition": "attested_after_registered",
+      "status": "KILLED",
+      "killed_by": [
+        "attested_after_registered"
+      ]
+    },
+    {
+      "condition": "idle_age_2h",
+      "status": "SURVIVED",
+      "killed_by": []
+    }
+  ]
+}

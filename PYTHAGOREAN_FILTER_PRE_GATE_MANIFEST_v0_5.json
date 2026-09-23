@@ -1,0 +1,114 @@
+{
+  "status": "PRE_GATE_NOT_FROZEN",
+  "confirmatory_run_performed": false,
+  "primary_baseline": "direct",
+  "chain_hash": "52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971",
+  "genesis_unix": 1692803367,
+  "chain_constants_primary_source": "https://docs.drand.love/blog/2023/10/16/quicknet-is-live/",
+  "independent_live_chain_info_check": {
+    "status": "REVIEWER_REPORTED_FETCHED_BODY_FIELDS_MATCH",
+    "source_url": "https://api.drand.sh/52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971/info",
+    "checked_fields": ["genesis_time", "period", "hash", "public_key", "schemeID"],
+    "archived_evidence_url": null,
+    "recorded_in_signed_freeze": false
+  },
+  "smoke": "PASS; end-to-end nine separate-seed fixtures; timings discarded",
+  "synthetic_gate_test": "PASS; seven negative cases assert exact rejection reasons; cross-midnight accepted; literal quicknet round 1000 and four launch boundaries (+299 reject, +300 accept, +7200 accept, +7201 reject)",
+  "no_gate": "REFUSED with rc=1 before confirmatory seed construction",
+  "sha256": {
+    "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_5.md": "a89ca119b74d67744532489c9930cc4be2e42d8a2fefc86f9364463bf957a7ec",
+    "pythagorean_filter_confirmatory_v0_5.py": "ca9a06a9a3b3d3b85c8ae571204489fbf6bbf59c20f1a54a8a817a4428383215",
+    "pythagorean_filter_synthetic_gate_test_v0_5.py": "8f8dae40905c06590d1435eedcd7536b6ad0d17213100d1c65f5bf59392bd401",
+    "pythagorean_filter_gate_characterization_v0_5.py": "63984aec1e8d8849d4ce27599e7f63ecbb1c5b4c71f6ebe8daa2bc98e6b5fad9",
+    "PYTHAGOREAN_FILTER_MUTATION_OBSERVATIONS_v0_5.json": "7e12fc50d82254c0b7b1884f8e11d3e722bdbba07dd17cef754b81c3d0cabba1",
+    "PYTHAGOREAN_FILTER_MUTATION_MATRIX_v0_5.md": "be36c18c0b1a806e60b38048eb32e70d63c5233a346d63d61b3f90f7fcb3b371"
+  },
+  "prior_artifacts": {
+    "v0.1": {
+      "status": "PILOT_ONLY_BLOCKED_TO_CONFIRMATORY",
+      "sha256": {
+        "PYTHAGOREAN_FILTER_EXPERIMENT_v0_1.md": "f84bbcb1758e30fe0020aac05bf3ba52c08e5f436bd903df42645a8475d03b38",
+        "pythagorean_filter_benchmark_v0_1.py": "a4eb615b33f77950aae4904df1f3c3865e37e28a85a6abe75dd4528eb7042182",
+        "pythagorean_filter_results_v0_1.json": "305803ed09e66be3f6eaf201aac5ad859801a95e5253a58c1bf737c04a3c4ae4"
+      }
+    },
+    "v0.2": {
+      "status": "FAILED_INDEPENDENT_PRE_GATE",
+      "sha256": {
+        "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_2.md": "bfd2d869b48bbae4265d4f0abc822727369ef881a4f670a9ecadc3b0d12fd05f",
+        "pythagorean_filter_confirmatory_v0_2.py": "a5c29113873fe748af553ba503937916f04dc8cc6f03b7ba72703401cab80c31",
+        "PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_2.json": "f424af36fd5f54f745b9d84cbc17d44b5f257a1068a9cf0a05286d39bda8caf6"
+      }
+    },
+    "v0.3": {
+      "status": "FAILED_INDEPENDENT_PRE_GATE",
+      "sha256": {
+        "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_3.md": "8b7264b9517af63b93a59a79521ec20a3908d72be78c3ab1488d223481f7d6e9",
+        "pythagorean_filter_confirmatory_v0_3.py": "786b0cd56fa291aa4ba030261a2fd6b00e632dc7e5623ef5a5477a3a704d8155",
+        "PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_3.json": "9ce530426121eca92d1501bf811e530e4ddff0f2a43981d3d03952565dd1929c"
+      }
+    },
+    "v0.4": {
+      "status": "FAILED_INDEPENDENT_PRE_GATE",
+      "sha256": {
+        "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_4.md": "a85f3d97b15d29c58fc5e09c9f2d7513027b6a5fca0f11491f7796cefb798449",
+        "pythagorean_filter_confirmatory_v0_4.py": "63ea935191f110a2afeb83b65f1467c8b2cb237544a3b86de5798aeb450a0407",
+        "PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_4.json": "2b9638364333214eab443f90103be39232240ee7fd8e5d69d4d4464bef917966"
+      }
+    }
+  },
+  "independent_review": null,
+  "approval": null,
+  "beacon_round": null,
+  "beacon_randomness": null,
+  "attempt_ledger": null,
+  "mutation_check": "LOCAL PASS; reviewer reports independent reproduction for reviewed test and benchmark bytes; package integrity review pending",
+  "known_answer_and_boundary_tests": {
+    "status": "REVIEWER_REPORTED_SURVIVES_REVIEW_FOR_TEST_BYTES_ONLY",
+    "review_basis": {
+      "status": "SURVIVES_REVIEW_REPORTED",
+      "test_sha256": "8f8dae40905c06590d1435eedcd7536b6ad0d17213100d1c65f5bf59392bd401",
+      "manifest_sha256_at_review": "826cec960d5815edabea714846f0b2573301a2f9b1a69c2f900ba6035e636632",
+      "scope": "known-answer and four launch-boundary tests; archive not reviewed"
+    },
+    "approved_at_utc": "2023-08-23T15:49:21Z",
+    "approved_plus_600_utc": "2023-08-23T15:59:21Z",
+    "expected_round": 1000,
+    "expected_release_utc": "2023-08-23T15:59:24Z",
+    "boundary_seconds": {
+      "299": "REJECT",
+      "300": "ACCEPT",
+      "7200": "ACCEPT",
+      "7201": "REJECT"
+    },
+    "source": "https://docs.drand.love/docs/specification/ ; https://docs.drand.love/blog/2023/10/16/quicknet-is-live/ ; https://api.drand.sh/v2/chains/52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971/rounds/1000",
+    "beacon_in_test": "synthetic signature, no BLS verification or live lookup"
+  },
+  "prior_pre_gate_review": {
+    "status": "SURVIVES_REVIEW_REPORTED_FOR_LISTED_FILES_ONLY",
+    "reviewed_files_sha256": {
+      "pythagorean_filter_confirmatory_v0_5.py": "ca9a06a9a3b3d3b85c8ae571204489fbf6bbf59c20f1a54a8a817a4428383215",
+      "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_5.md": "a89ca119b74d67744532489c9930cc4be2e42d8a2fefc86f9364463bf957a7ec",
+      "pythagorean_filter_synthetic_gate_test_v0_5.py": "6af09f4b4de62b782da49764a3eca73e92da1120f00dbdf5bb6d8cca5ee4eda4",
+      "pythagorean_filter_gate_characterization_v0_5.py": "63984aec1e8d8849d4ce27599e7f63ecbb1c5b4c71f6ebe8daa2bc98e6b5fad9",
+      "PYTHAGOREAN_FILTER_MUTATION_OBSERVATIONS_v0_5.json": "7e12fc50d82254c0b7b1884f8e11d3e722bdbba07dd17cef754b81c3d0cabba1",
+      "PYTHAGOREAN_FILTER_MUTATION_MATRIX_v0_5.md": "be36c18c0b1a806e60b38048eb32e70d63c5233a346d63d61b3f90f7fcb3b371"
+    },
+    "unverified_package_claims": {
+      "manifest_sha256": "88f3f5fedc0375e68498b90e3fafda337ba4a30f143195cfdbecc72875d92b84",
+      "archive_sha256": "7a963ddacba9316bd5e09a05fc37bf3627bb54503e3d36fd88f8794a39a6434a",
+      "status": "NOT_SEEN_OR_VERIFIED_BY_REVIEWER"
+    }
+  },
+  "systematic_characterization": {
+    "status": "REVIEWER_REPORTED_SURVIVES_REVIEW_FOR_LISTED_FILES_ONLY",
+    "explicit_if_guards": 18,
+    "guard_mutants_killed_by_exact_diagnostic": 18,
+    "reachable_idle_subconditions_killed": [
+      "attested < observed",
+      "attested > registered"
+    ],
+    "equivalent_idle_subcondition": "now - attested > 2 h; implied by observed >= release and now <= release + 7200 s",
+    "scope": "only validate_gate explicit if guards and three idle subconditions; external evidence unverified"
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "seed": 20260922,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "script_sha256": "a4eb615b33f77950aae4904df1f3c3865e37e28a85a6abe75dd4528eb7042182",
+  "clock": "perf_counter_ns; microseconds per pair; paired alternating order",
+  "results": [
+    {
+      "nominal_input_bits": 1024,
+      "family": "coprime_accept",
+      "pairs": 12,
+      "repeats": 7,
+      "median_input_coord_bits": 1024.0,
+      "median_q_bits": 1.0,
+      "direct_us": [
+        15.899833333333333,
+        18.73916666666667,
+        14.68975,
+        14.643,
+        14.476833333333333,
+        14.496916666666666,
+        14.49275
+      ],
+      "filtered_us": [
+        8.799083333333334,
+        8.18325,
+        8.227416666666667,
+        7.97375,
+        9.164666666666665,
+        7.977916666666667,
+        7.98625
+      ],
+      "median_direct_us": 14.643,
+      "median_filtered_us": 8.18325,
+      "direct_over_filtered": 1.7893868572999727,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 1024,
+      "family": "small_accept",
+      "pairs": 12,
+      "repeats": 7,
+      "median_input_coord_bits": 1027.0,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        15.593583333333333,
+        15.056916666666666,
+        14.579583333333334,
+        15.418333333333335,
+        23.517166666666668,
+        14.52025,
+        14.4585
+      ],
+      "filtered_us": [
+        11.7695,
+        9.66125,
+        8.7065,
+        8.6005,
+        8.853333333333333,
+        8.579666666666666,
+        8.568833333333334
+      ],
+      "median_direct_us": 15.056916666666666,
+      "median_filtered_us": 8.7065,
+      "direct_over_filtered": 1.7293880051302666,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 1024,
+      "family": "small_reject",
+      "pairs": 12,
+      "repeats": 7,
+      "median_input_coord_bits": 1026.0,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        15.530083333333334,
+        15.004333333333333,
+        14.789,
+        15.60275,
+        14.420916666666667,
+        15.1245,
+        14.402666666666667
+      ],
+      "filtered_us": [
+        5.273,
+        4.892333333333333,
+        4.793916666666667,
+        4.72125,
+        4.763833333333333,
+        4.70375,
+        4.738833333333333
+      ],
+      "median_direct_us": 15.004333333333333,
+      "median_filtered_us": 4.763833333333333,
+      "direct_over_filtered": 3.149634398068782,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 1024,
+      "family": "large_accept",
+      "pairs": 12,
+      "repeats": 7,
+      "median_input_coord_bits": 1024.0,
+      "median_q_bits": 512.0,
+      "direct_us": [
+        15.70375,
+        15.187166666666666,
+        14.58375,
+        14.668833333333334,
+        14.47775,
+        17.9705,
+        14.449333333333334
+      ],
+      "filtered_us": [
+        12.497166666666667,
+        11.716083333333334,
+        13.16575,
+        11.59,
+        11.485666666666667,
+        16.5425,
+        11.544083333333335
+      ],
+      "median_direct_us": 14.668833333333334,
+      "median_filtered_us": 11.716083333333334,
+      "direct_over_filtered": 1.2520253497684806,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 1024,
+      "family": "large_reject",
+      "pairs": 12,
+      "repeats": 7,
+      "median_input_coord_bits": 1023.0,
+      "median_q_bits": 512.0,
+      "direct_us": [
+        11.435666666666666,
+        11.090166666666667,
+        28.877,
+        11.922166666666666,
+        11.253666666666666,
+        11.635083333333334,
+        19.09391666666667
+      ],
+      "filtered_us": [
+        6.509916666666667,
+        6.046666666666667,
+        6.963,
+        6.36375,
+        6.589166666666667,
+        6.11675,
+        6.438916666666667
+      ],
+      "median_direct_us": 11.635083333333334,
+      "median_filtered_us": 6.438916666666667,
+      "direct_over_filtered": 1.8069939301383515,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 8192,
+      "family": "coprime_accept",
+      "pairs": 6,
+      "repeats": 7,
+      "median_input_coord_bits": 8192.0,
+      "median_q_bits": 1.0,
+      "direct_us": [
+        520.0495,
+        518.8576666666667,
+        518.8376666666667,
+        518.1848333333334,
+        558.9648333333333,
+        646.6558333333334,
+        517.978
+      ],
+      "filtered_us": [
+        250.8325,
+        248.98133333333334,
+        246.93833333333333,
+        249.63583333333335,
+        259.6741666666667,
+        276.08233333333334,
+        251.45016666666666
+      ],
+      "median_direct_us": 518.8576666666667,
+      "median_filtered_us": 250.8325,
+      "direct_over_filtered": 2.068542420406712,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 8192,
+      "family": "small_accept",
+      "pairs": 6,
+      "repeats": 7,
+      "median_input_coord_bits": 8195.0,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        515.7295,
+        517.125,
+        512.9018333333333,
+        862.0713333333334,
+        535.2238333333333,
+        515.803,
+        532.8405
+      ],
+      "filtered_us": [
+        255.7415,
+        250.04466666666664,
+        469.9336666666667,
+        444.1998333333333,
+        253.47633333333334,
+        257.1453333333333,
+        260.624
+      ],
+      "median_direct_us": 517.125,
+      "median_filtered_us": 257.1453333333333,
+      "direct_over_filtered": 2.0110223012667285,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 8192,
+      "family": "small_reject",
+      "pairs": 6,
+      "repeats": 7,
+      "median_input_coord_bits": 8194.5,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        517.8443333333333,
+        516.4106666666667,
+        518.1916666666667,
+        515.9315,
+        519.113,
+        517.2166666666667,
+        518.507
+      ],
+      "filtered_us": [
+        112.99416666666667,
+        113.81366666666668,
+        115.0405,
+        112.999,
+        115.281,
+        111.37833333333333,
+        141.03483333333335
+      ],
+      "median_direct_us": 517.8443333333333,
+      "median_filtered_us": 113.81366666666668,
+      "direct_over_filtered": 4.549931027615313,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 8192,
+      "family": "large_accept",
+      "pairs": 6,
+      "repeats": 7,
+      "median_input_coord_bits": 8190.0,
+      "median_q_bits": 4094.0,
+      "direct_us": [
+        515.8313333333333,
+        570.6225,
+        529.522,
+        518.8458333333333,
+        543.4598333333333,
+        538.746,
+        515.8263333333333
+      ],
+      "filtered_us": [
+        384.8668333333333,
+        379.8908333333333,
+        399.3485,
+        380.1211666666667,
+        382.4265,
+        421.01983333333334,
+        380.26983333333334
+      ],
+      "median_direct_us": 529.522,
+      "median_filtered_us": 382.4265,
+      "direct_over_filtered": 1.384637309391478,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 8192,
+      "family": "large_reject",
+      "pairs": 6,
+      "repeats": 7,
+      "median_input_coord_bits": 8192.0,
+      "median_q_bits": 4096.5,
+      "direct_us": [
+        414.852,
+        417.3991666666667,
+        408.4925,
+        413.9506666666667,
+        408.5626666666667,
+        419.1603333333333,
+        414.6016666666667
+      ],
+      "filtered_us": [
+        213.9735,
+        216.84283333333335,
+        224.22566666666665,
+        214.75116666666665,
+        216.16,
+        248.53733333333335,
+        217.16833333333335
+      ],
+      "median_direct_us": 414.6016666666667,
+      "median_filtered_us": 216.84283333333335,
+      "direct_over_filtered": 1.911991557633524,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 65536,
+      "family": "coprime_accept",
+      "pairs": 3,
+      "repeats": 5,
+      "median_input_coord_bits": 65536,
+      "median_q_bits": 1,
+      "direct_us": [
+        24643.359,
+        24860.086666666666,
+        25742.817333333332,
+        24985.119,
+        24803.658
+      ],
+      "filtered_us": [
+        9321.372666666666,
+        9987.125666666667,
+        9416.49,
+        9182.73,
+        9144.469
+      ],
+      "median_direct_us": 24860.086666666666,
+      "median_filtered_us": 9321.372666666666,
+      "direct_over_filtered": 2.666998472828644,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 65536,
+      "family": "small_accept",
+      "pairs": 3,
+      "repeats": 5,
+      "median_input_coord_bits": 65539,
+      "median_q_bits": 3,
+      "direct_us": [
+        25248.744333333332,
+        24554.95533333333,
+        24803.320666666667,
+        25449.157,
+        25469.74133333333
+      ],
+      "filtered_us": [
+        9250.956333333334,
+        9332.299333333334,
+        9342.407666666666,
+        9267.635,
+        9192.327666666666
+      ],
+      "median_direct_us": 25248.744333333332,
+      "median_filtered_us": 9267.635,
+      "direct_over_filtered": 2.724399950292964,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 65536,
+      "family": "small_reject",
+      "pairs": 3,
+      "repeats": 5,
+      "median_input_coord_bits": 65537,
+      "median_q_bits": 3,
+      "direct_us": [
+        24641.33266666667,
+        24658.802333333333,
+        24829.347,
+        24689.719,
+        24875.089333333333
+      ],
+      "filtered_us": [
+        5349.739333333333,
+        5348.701333333333,
+        5354.002666666667,
+        5351.696,
+        5354.630333333333
+      ],
+      "median_direct_us": 24689.719,
+      "median_filtered_us": 5351.696,
+      "direct_over_filtered": 4.613438244623761,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 65536,
+      "family": "large_accept",
+      "pairs": 3,
+      "repeats": 5,
+      "median_input_coord_bits": 65535,
+      "median_q_bits": 32768,
+      "direct_us": [
+        25339.017,
+        24765.323333333334,
+        26104.197333333334,
+        25186.289666666667,
+        25273.912
+      ],
+      "filtered_us": [
+        17265.126666666667,
+        17038.030333333332,
+        18217.81666666667,
+        16709.143,
+        16609.562333333335
+      ],
+      "median_direct_us": 25273.912,
+      "median_filtered_us": 17038.030333333332,
+      "direct_over_filtered": 1.483382263415386,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 65536,
+      "family": "large_reject",
+      "pairs": 3,
+      "repeats": 5,
+      "median_input_coord_bits": 65535,
+      "median_q_bits": 32767,
+      "direct_us": [
+        20759.66866666667,
+        20228.512333333332,
+        21372.565,
+        19853.65566666667,
+        19800.976333333332
+      ],
+      "filtered_us": [
+        13728.738,
+        14325.449666666666,
+        11426.465,
+        11371.541666666666,
+        11243.031
+      ],
+      "median_direct_us": 20228.512333333332,
+      "median_filtered_us": 11426.465,
+      "direct_over_filtered": 1.770321121478369,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 100000,
+      "family": "coprime_accept",
+      "pairs": 2,
+      "repeats": 5,
+      "median_input_coord_bits": 99999.5,
+      "median_q_bits": 1.0,
+      "direct_us": [
+        55637.8985,
+        56048.459,
+        58850.6595,
+        56034.778,
+        55380.9045
+      ],
+      "filtered_us": [
+        19554.6625,
+        20794.261,
+        19520.661,
+        20086.4015,
+        19500.2705
+      ],
+      "median_direct_us": 56034.778,
+      "median_filtered_us": 19554.6625,
+      "direct_over_filtered": 2.865545646722361,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 100000,
+      "family": "small_accept",
+      "pairs": 2,
+      "repeats": 5,
+      "median_input_coord_bits": 100002.0,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        55508.0915,
+        55474.997,
+        55309.527,
+        55238.249,
+        55130.0155
+      ],
+      "filtered_us": [
+        19420.149,
+        19410.995,
+        20777.856,
+        19857.8255,
+        20009.044
+      ],
+      "median_direct_us": 55309.527,
+      "median_filtered_us": 19857.8255,
+      "direct_over_filtered": 2.7852761119287712,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 100000,
+      "family": "small_reject",
+      "pairs": 2,
+      "repeats": 5,
+      "median_input_coord_bits": 100002.0,
+      "median_q_bits": 3.0,
+      "direct_us": [
+        56409.9605,
+        58249.3505,
+        57436.632,
+        58229.7105,
+        56966.5065
+      ],
+      "filtered_us": [
+        12264.498,
+        12242.044,
+        12411.6305,
+        12301.6995,
+        12378.9615
+      ],
+      "median_direct_us": 57436.632,
+      "median_filtered_us": 12301.6995,
+      "direct_over_filtered": 4.668999758935747,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 100000,
+      "family": "large_accept",
+      "pairs": 2,
+      "repeats": 5,
+      "median_input_coord_bits": 99997.5,
+      "median_q_bits": 49998.5,
+      "direct_us": [
+        55567.8575,
+        56835.839,
+        57658.753,
+        56311.176,
+        55702.5915
+      ],
+      "filtered_us": [
+        36204.399,
+        36543.3715,
+        37144.956,
+        36490.116,
+        37952.098
+      ],
+      "median_direct_us": 56311.176,
+      "median_filtered_us": 36543.3715,
+      "direct_over_filtered": 1.540940906341934,
+      "correctness_mismatches": 0
+    },
+    {
+      "nominal_input_bits": 100000,
+      "family": "large_reject",
+      "pairs": 2,
+      "repeats": 5,
+      "median_input_coord_bits": 99999.0,
+      "median_q_bits": 50000.0,
+      "direct_us": [
+        45073.1445,
+        45902.1775,
+        45313.9635,
+        44868.8555,
+        46704.2
+      ],
+      "filtered_us": [
+        25729.1305,
+        27278.227,
+        28558.7675,
+        26486.7405,
+        26454.9325
+      ],
+      "median_direct_us": 45313.9635,
+      "median_filtered_us": 26486.7405,
+      "direct_over_filtered": 1.710816908558454,
+      "correctness_mismatches": 0
+    }
+  ]
+}

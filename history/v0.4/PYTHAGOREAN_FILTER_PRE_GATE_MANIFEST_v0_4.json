@@ -1,0 +1,22 @@
+{
+  "status": "PRE_GATE_NOT_FROZEN",
+  "confirmatory_run_performed": false,
+  "primary_baseline": "direct",
+  "chain_hash": "52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971",
+  "genesis_unix": 1692803367,
+  "period_seconds": 3,
+  "chain_constants_primary_source": "https://docs.drand.love/blog/2023/10/16/quicknet-is-live/",
+  "independent_live_chain_info_check": "PENDING",
+  "smoke": "PASS end-to-end 9 separate-seed fixtures; timings discarded",
+  "synthetic_gate_test": "PASS; fake beacon only, no confirmatory benchmark",
+  "no_gate": "BLOCKED before confirmatory seed construction",
+  "sha256": {
+    "PYTHAGOREAN_FILTER_CONFIRMATORY_SPEC_v0_4.md": "a85f3d97b15d29c58fc5e09c9f2d7513027b6a5fca0f11491f7796cefb798449",
+    "pythagorean_filter_confirmatory_v0_4.py": "63ea935191f110a2afeb83b65f1467c8b2cb237544a3b86de5798aeb450a0407"
+  },
+  "independent_review": null,
+  "approval": null,
+  "beacon_round": null,
+  "beacon_randomness": null,
+  "attempt_ledger": null
+}
