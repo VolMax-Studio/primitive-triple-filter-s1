@@ -120,7 +120,7 @@ The frozen public proof-artifact bundle for Rungs A and B is archived on Zenodo:
 - DOI: `10.5281/zenodo.22940155`
 - Version: `1.0.0`
 - License: MIT
-- Record: https://doi.org/10.5281/zenodo.22940155
+- Record: https://zenodo.org/records/22940155
 
 For Rung A, the human-ratified theorem commit remains
 `3742611ce2c3221e8b70fa31cbc537fe8a23f3dc`.
