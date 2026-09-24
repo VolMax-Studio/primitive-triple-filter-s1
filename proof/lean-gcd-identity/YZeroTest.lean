@@ -1,5 +1,5 @@
 import PrimitiveTripleFilter
-import Mathlib.Tactic
+import Mathlib.Tactic.NormNum.GCD
 
 /-!
 # Complete-cancellation sanity test

@@ -49,6 +49,7 @@ case "$forbidden_rc" in
 esac
 
 lake build PrimitiveTripleFilter
+lake build Mathlib.Tactic.NormNum.GCD
 lake env lean YZeroTest.lean
 lake env lean AxiomAudit.lean
 sha256sum -c SHA256SUMS
