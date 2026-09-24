@@ -96,3 +96,17 @@ python3 pythagorean_filter_synthetic_gate_test_v0_5.py
 # 2. Run gate mutation characterization
 python3 pythagorean_filter_gate_characterization_v0_5.py
 ```
+
+---
+
+## 5. Separate Lean proof track
+
+The mathematical identity and modular-filter equivalence are maintained as a
+separate proof artifact in `proof/lean-gcd-identity/`.  That directory has its
+own pinned Lean/Mathlib environment, frozen hashes, end-to-end verifier, and CI
+gate.
+
+Closing or reproducing the Lean proof does **not** freeze, authorize, or execute
+the v0.5 confirmatory performance benchmark.  The repository-level benchmark
+status at the top of this file therefore remains `PRE-GATE / NOT FROZEN / NO
+CONFIRMATORY RUN`.
