@@ -110,3 +110,20 @@ Closing or reproducing the Lean proof does **not** freeze, authorize, or execute
 the v0.5 confirmatory performance benchmark.  The repository-level benchmark
 status at the top of this file therefore remains `PRE-GATE / NOT FROZEN / NO
 CONFIRMATORY RUN`.
+
+---
+
+## 6. Canonical publication artifact
+
+The frozen public proof-artifact bundle for Rungs A and B is archived on Zenodo:
+
+- DOI: `10.5281/zenodo.22940155`
+- Version: `1.0.0`
+- License: MIT
+- Record: https://doi.org/10.5281/zenodo.22940155
+
+For Rung A, the human-ratified theorem commit remains
+`3742611ce2c3221e8b70fa31cbc537fe8a23f3dc`.
+
+The publication snapshot is tagged
+`primitive-triple-filter-lean-a-v1-publication-snapshot`.
