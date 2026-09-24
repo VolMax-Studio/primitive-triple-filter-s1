@@ -6,3 +6,6 @@ __pycache__/
 *.swo
 *~
 .DS_Store
+
+# Lean/Lake build cache
+proof/lean-gcd-identity/.lake/
