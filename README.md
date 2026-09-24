@@ -53,7 +53,7 @@ primitive-triple-filter-s1/
 
 ## 3. Pinned SHA-256 Identifiers
 
-All candidate and historical artifact digests are pinned in [PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_5.json](file:///home/volmax-studio/volmax-projects/iot2/PORTFOLIO/primitive-triple-filter-s1/PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_5.json):
+All candidate and historical artifact digests are pinned in [PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_5.json](PYTHAGOREAN_FILTER_PRE_GATE_MANIFEST_v0_5.json):
 
 ### Candidate v0.5
 | File | SHA-256 |
