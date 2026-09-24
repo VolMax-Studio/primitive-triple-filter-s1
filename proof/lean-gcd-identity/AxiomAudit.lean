@@ -1,9 +1,8 @@
 import PrimitiveTripleFilter
 
 /-!
-Candidate mechanical axiom audit. Unlike bare #print axioms, each #guard_msgs
-command must match its expected info message or Lean rejects the file.
-These expectations come from the author's report and await a pinned build.
+Mechanical axiom audit. Unlike bare #print axioms, each #guard_msgs command
+must match its expected info message or Lean rejects the file.
 -/
 
 /-- info: 'primitive_composition_gcd_identity' depends on axioms: [propext, Classical.choice, Quot.sound] -/
